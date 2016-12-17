@@ -13,11 +13,11 @@ def ind2vec(ind, N=None):
 if __name__ == '__main__':
 
 
-    feature_mat = pickle.load(gzip.open('ELMfeature.pickle.gz', 'rb'), encoding='latin1')
+    feature_mat = pickle.load(gzip.open('ELMfeature.pickle.gz', 'rb'), decoding='latin1')
 
-    labels = pickle.load(gzip.open('ELMlabels.pickle.gz', 'rb'), encoding='latin1')
+    labels = pickle.load(gzip.open('ELMlabels.pickle.gz', 'rb'), decoding='latin1')
 
-    _, indices = pickle.load(gzip.open('ELMtrain.pickle.gz', 'rb'), encoding='latin1')
+    _, indices = pickle.load(gzip.open('ELMtrain.pickle.gz', 'rb'), deoding='latin1')
 
     segnum = indices.max()
 
